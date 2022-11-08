@@ -1,0 +1,39 @@
+.nav-enlace{
+    display: inline-block ;/* para ponerlo como un bloque*/
+    background: #2A2F40 ; /* fondo */
+    color: white; /* color texto*/
+    padding: 10px 30px;
+    text-decoration: none; /*Sacar linea de link*/
+    border-radius: 5px;
+}
+.nav-enlace:hover{ /* Para cambiar el color cuando el cursor este encima del boton*/
+    background: #F3DB0B;
+    color: black;
+}
+
+nav{
+    background:#2A2F40;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.nav-right {
+    justify-content: flex-end;
+}
+.nav-left {
+    justify-content:left;
+}
+footer{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+@media (max-width: 600px){
+    nav{
+        flex-direction: column;
+        
+    }
+    .nav-enlace{
+        margin: 10px 0px;
+    }
+}
+

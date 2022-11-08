@@ -1,0 +1,64 @@
+.secciones{
+    margin: 0 auto;
+    width: 90%;
+}
+h2{
+    font-weight: 400;
+    font-size: 30px;
+}
+p{
+    font-weight: 300;
+}
+.flex{
+    display: flex;
+}
+.text-center{
+    text-align: center;
+}
+.columna{
+    background: #2A2F40;
+    color:white;
+    /*border: 1px solid #333;*/
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(192, 192, 192);/*1 es a donde va a forma, psitivo es a la derecha, el segundo valor es al eje X, y tercero degradado*/
+    width: 20%;
+    box-sizing: border-box;
+}
+.precio{
+    font-size: 50px;
+    color: #BCBCBF ;
+    font-weight: 600;    
+}
+.titulo-productos{
+    text-align: center;
+    font-size: 50px;
+    margin: 20px;
+}
+.btn-1{
+    background: #2A2F40;
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    font-weight: 750;
+}
+.btn-1:hover{
+    background: #F3DB0B;
+    color:black;
+}
+@media(max-width: 1070px){
+    .columna{
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+@media(max-width: 600px){
+    .columna{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

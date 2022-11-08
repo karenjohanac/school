@@ -1,0 +1,177 @@
+html{
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    margin-top: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+    background-color: #fbfffea1;
+}
+
+
+
+.formRegistro{
+    width: 500px;
+}
+
+.formLogin{
+    width: 450px;
+}
+
+button{
+    padding: 7px;
+    color: #fff;
+    background: #44bdc5;
+    width: 100px;
+    height: 30px;
+    margin: 10px auto;
+    margin-top: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btnMenu{
+    width: 100px;
+}
+
+.formIndex{
+    width: 800px;  
+}
+
+.container{
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    margin-top: 50px;
+}
+.lbl-menu{
+    background-color: #234;
+}
+
+.lbl-menu label{
+    display: inline-block;
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.lbl-menu label:hover{
+    background-color: #28435d;
+
+}
+
+.content{
+    position: relative;
+}
+
+.content div{
+    position: absolute;
+    line-height: 1.8;
+    transition: all 600ms ease;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.90);
+    padding: 30px;
+    padding-bottom: 40px;
+}
+
+#radio1, #radio2, #radio3{
+    display: none;
+}
+
+#radio1:checked ~ .tab1,
+#radio2:checked ~ .tab2,
+#radio3:checked ~ .tab3{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+.content div::after{
+    position: absolute;
+    content: "";
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid white;
+    bottom: 100%;
+    left: 28px;
+}
+
+.content .tab2:after{
+    left: 200px;
+}
+
+.content .tab3:after{
+    left: 320px;
+}
+
+
+.lblAutorm,
+.articuloTitulo{
+    float: left;
+}
+
+.txtMensaje,
+.lblTexto {
+    float: right;
+    width: 450px;  
+    clear: right;  
+}
+
+.lblFecha {
+    float: right;
+    clear: right;
+}
+
+.imgAutor {
+    width: 150px;
+    float: left;
+    clear: left;
+}   
+
+.tap1,
+.tab2,
+.tap3 {
+    overflow: auto;
+    
+}
+
+li{
+    list-style: none;
+    border-bottom: solid;
+    border-color: #000000;
+    height: 200px;
+    
+}
+
+ul{
+    list-style: none;
+    width: 600px;
+}
+
+input.disabled{
+    color: aqua;
+    width: 140px;
+    margin-right: 0px;
+    border: 0px;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+input{
+    background-color: #eee;
+    border-radius: 3px;
+    border: 1px solid #000000;
+    text-align: center;
+    margin: 6px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 170px;
+    height: 25px;
+}
+
+
